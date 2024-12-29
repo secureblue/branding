@@ -28,3 +28,7 @@ Logos for secureblue
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
 
 mv logos/* %{buildroot}%{_datadir}/pixmaps
+
+%files
+%attr(0755,root,root) %{_datadir}/pixmaps/fedora*
+%attr(0755,root,root) %{_datadir}/pixmaps/system-*
