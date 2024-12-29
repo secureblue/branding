@@ -3,7 +3,7 @@
 
 Name:           secureblue-logos
 Version:        0.1.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        secureblue logos
 
 License:        Apache 2.0
@@ -30,7 +30,7 @@ mkdir -p -m0755 %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 mv logos/* %{buildroot}%{_datadir}/pixmaps
-mv icons/* %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+mv icons/*.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 %files
