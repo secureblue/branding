@@ -3,7 +3,7 @@
 
 Name:           secureblue-logos
 Version:        0.1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        secureblue logos
 
 License:        Apache 2.0
