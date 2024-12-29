@@ -3,7 +3,7 @@
 
 Name:           secureblue-logos
 Version:        0.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        secureblue logos
 
 License:        Apache 2.0
@@ -26,9 +26,12 @@ Logos for secureblue
 %install
 
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
+mkdir -p -m0755 %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 
 mv logos/* %{buildroot}%{_datadir}/pixmaps
+mv icons/* %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
 %attr(0755,root,root) %{_datadir}/pixmaps/system-*
+%attr(0755,root,root) %{_datadir}/icons/hicolor/scalable/apps/start-here*
