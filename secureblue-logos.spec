@@ -25,4 +25,6 @@ Logos for secureblue
 
 %install
 
+mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
+
 mv logos/* %{buildroot}%{_datadir}/pixmaps
