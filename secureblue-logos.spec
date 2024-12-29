@@ -27,11 +27,14 @@ Logos for secureblue
 
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
 mkdir -p -m0755 %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 mv logos/* %{buildroot}%{_datadir}/pixmaps
 mv icons/* %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
 %attr(0755,root,root) %{_datadir}/pixmaps/system-*
+%attr(0755,root,root) %{_datadir}/plymouth/themes/spinner/watermark.png
 %attr(0755,root,root) %{_datadir}/icons/hicolor/scalable/apps/start-here*
