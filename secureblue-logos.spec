@@ -14,10 +14,14 @@ Obsoletes: fedora-logos
 Obsoletes: centos-logos
 Obsoletes: system-logos
 URL:            https://github.com/secureblue/branding
+VCS:           {{{ git_dir_vcs }}}
 Source:        {{{ git_dir_pack }}}
 
 %description
 Logos for secureblue
+
+%prep
+{{{ git_dir_setup_macro }}}
 
 %install
 
