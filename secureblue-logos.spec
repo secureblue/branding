@@ -2,8 +2,8 @@
 %global vendor bluefin
 
 Name:           secureblue-logos
-Version:        0.1.0
-Release:        4%{?dist}
+Version:        0.2.0
+Release:        1%{?dist}
 Summary:        secureblue logos
 
 License:        Apache 2.0
