@@ -28,6 +28,7 @@ Logos for secureblue
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
 mkdir -p -m0755 %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
+mkdir -p -m0755 %{buildroot}%{_datadir}/anaconda/pixmaps/
 
 mv logos/* %{buildroot}%{_datadir}/pixmaps
 mv icons/*.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
