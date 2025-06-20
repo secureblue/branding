@@ -30,11 +30,13 @@ mkdir -p -m0755 %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
 mkdir -p -m0755 %{buildroot}%{_datadir}/anaconda/pixmaps/
 
+mv anaconda/* %{buildroot}%{_datadir}/anaconda/pixmaps/
 mv logos/* %{buildroot}%{_datadir}/pixmaps
 mv icons/*.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 %files
+%attr(0755,root,root) %{_datadir}/anaconda/pixmaps/*
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
 %attr(0755,root,root) %{_datadir}/pixmaps/system-*
 %attr(0755,root,root) %{_datadir}/plymouth/themes/spinner/watermark.png
