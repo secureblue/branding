@@ -2,7 +2,7 @@
 %global vendor secureblue
 
 Name:           fedora-logos
-Version:        100.0.0
+Version:        100.0.1
 Release:        1%{?dist}
 Summary:        secureblue logos
 
