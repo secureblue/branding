@@ -1,8 +1,8 @@
 %global debug_package %{nil}
-%global vendor bluefin
+%global vendor secureblue
 
-Name:           secureblue-logos
-Version:        0.3.2
+Name:           fedora-logos
+Version:        100.0.0
 Release:        1%{?dist}
 Summary:        secureblue logos
 
@@ -13,6 +13,7 @@ Provides: system-logos
 Obsoletes: fedora-logos
 Obsoletes: centos-logos
 Obsoletes: system-logos
+BuildArch:	noarch
 URL:            https://github.com/secureblue/branding
 VCS:           {{{ git_dir_vcs }}}
 Source:        {{{ git_dir_pack }}}
