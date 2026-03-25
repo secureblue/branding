@@ -3,7 +3,7 @@
 
 Name:           secureblue-logos
 Version:        0.3.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        secureblue logos
 
 License:        Apache 2.0
@@ -38,6 +38,7 @@ for size in 16x16 22x22 24x24 32x32 36x36 48x48 96x96 256x256; do
   mkdir -p -m0755 %{buildroot}%{_datadir}/icons/hicolor/${size}/apps
   mv icons/hicolor/${size}/apps/fedora-logo-icon.png %{buildroot}%{_datadir}/icons/hicolor/${size}/apps/
 done
+cp %{buildroot}%{_datadir}/pixmaps/fedora-logo-sprite.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/org.fedoraproject.AnacondaInstaller.svg
 
 %files
 %attr(0755,root,root) %{_datadir}/anaconda/pixmaps/*
@@ -46,3 +47,4 @@ done
 %attr(0755,root,root) %{_datadir}/plymouth/themes/spinner/watermark.png
 %attr(0755,root,root) %{_datadir}/icons/hicolor/scalable/apps/start-here*
 %attr(0755,root,root) %{_datadir}/icons/hicolor/*/apps/fedora-logo-icon.png
+%attr(0755,root,root) %{_datadir}/icons/hicolor/scalable/apps/org.fedoraproject.AnacondaInstaller.svg
